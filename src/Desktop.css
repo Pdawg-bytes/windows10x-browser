@@ -2,11 +2,10 @@
   position: fixed; 
   max-height: 50px;
   min-height: 50px;
-  background:white;
-  backdrop-filter: blur(30px); 
+  background:black;
+  opacity: calc(0.4);
   width:100%;
   bottom:0;
-  opacity: calc(0.3);
 }
 
 #wallpaper
