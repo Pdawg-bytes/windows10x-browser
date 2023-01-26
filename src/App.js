@@ -4,9 +4,15 @@ function App() {
   return (
     <div id='container'>
       <div id='wallpaper'>
-        <img src="https://t4.ftcdn.net/jpg/05/21/18/03/360_F_521180377_2iAVJqBQSo3cgKaVp8vMBR8asrC61DoU.jpg" alt='10x wallpaper' className='wallpaper-image'/>
+        <img src="https://cdn.wallpaperhub.app/cloudcache/b/c/a/f/b/0/bcafb0bcbd097fb78dc37ba5c755efe51dbd204e.jpg" alt='10x wallpaper' className='wallpaper-image'/>
       </div>
       <div id='bottom'>
+        <div id='bar'>
+
+        </div>
+        <div id='icons'>
+
+        </div>
       </div>
     </div>
   );

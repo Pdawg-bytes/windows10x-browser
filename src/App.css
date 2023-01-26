@@ -1,4 +1,4 @@
-#bottom{
+#bar{
   position: fixed; 
   max-height: 50px;
   min-height: 50px;
@@ -7,17 +7,18 @@
   width:100%;
   bottom:0;
   opacity: calc(0.3);
-  
 }
 
 #wallpaper
 {
-  
+  scroll-behavior: unset;
 }
 
 .wallpaper-image
 {
+  position: fixed;
   height: stretch;
   width: stretch;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
