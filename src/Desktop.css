@@ -2,9 +2,10 @@
   position: fixed; 
   max-height: 50px;
   min-height: 50px;
-  background:black;
+  background-color:black;
+  backdrop-filter: blur(10px);
   opacity: calc(0.4);
-  width:100%;
+  width:102%;
   bottom:0;
 }
 
