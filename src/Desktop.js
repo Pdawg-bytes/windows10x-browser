@@ -2,12 +2,11 @@ import './Desktop.css';
 
 function App() {
   return (
-  <div class="effects">
-    <div class="effect-holder dark">
-        <div class="dropdown-style black">
-            <img src="" alt=""/>
-            <span>Some Message</span>
-        </div>
+  <div class="container">
+    <div class="desktop">
+      <div class="bar">
+        
+      </div>
     </div>
   </div>
   );
