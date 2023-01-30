@@ -1,24 +1,30 @@
-#bar{
-  position: fixed; 
-  max-height: 50px;
-  min-height: 50px;
-  background-color:black;
-  backdrop-filter: blur(10px);
-  opacity: calc(0.4);
-  width:102%;
-  bottom:0;
+.effect-holder {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  float: left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://burst.shopifycdn.com/photos/abstract-background-of-four-colored-triangles.jpg?width=1200&format=pjpg&exif=1&iptc=1);
+}
+.dropdown-style {
+  margin: 0 1rem 0 0;
+  background-color: #ffffff7d;   
+  margin: 2rem;
+  border-radius: 12px;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+  box-sizing: border-box;
+  width: calc(100% - 4rem);
+  color: rgba(0,0,0,0.8);
+  backdrop-filter: blur(33px);
+  background-blend-mode: overlay;
+  display: flex;
+  align-items: center;
 }
 
-#wallpaper
-{
-  scroll-behavior: unset;
-}
-
-.wallpaper-image
-{
-  position: fixed;
-  height: stretch;
-  width: stretch;
-  overflow-x: hidden;
-  overflow-y: hidden;
+.dropdown-style > img {
+  width: 32px;
+  margin: 0 1rem 0 0;
 }
