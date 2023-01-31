@@ -6,27 +6,31 @@
   background-repeat: no-repeat;
   overflow-x:hidden;
   overflow-y: hidden;
-  background-image: url(https://burst.shopifycdn.com/photos/abstract-background-of-four-colored-triangles.jpg?width=1200&format=pjpg&exif=1&iptc=1);
+  background-image: url(https://static.miraheze.org/windowswallpaperwiki/c/c8/Beach_%28Windows_10X%29.png);
 }
 .bar {
-  background-color: #0000008b;
+  background-color: #2c2b2bba;
   overflow-x:hidden;
   overflow-y: hidden;
   height: 50px;
   position: absolute;
   bottom:0;
-  width: calc(100%);
-  color: rgba(0,0,0,0.8);
-  backdrop-filter: blur(90px) brightness(90%);
-  background-blend-mode: darken;
+  width: 100vw;
+  backdrop-filter: blur(90px) saturate(400%);
+  background-blend-mode: lighten;
   align-items: center;
 }
 
 .clockRight
 {
-  vertical-align: left;
-  bottom:0;
-  background-color: wheat;
+  color: #a8a6a8;
+  width: auto;
+  font-family: SegoeReg;
+  display: flex;
+  font-size: 14px;
+  margin-top: 7px;
+  margin-right: 12px;
+  justify-content: flex-end;
 }
 
 .container

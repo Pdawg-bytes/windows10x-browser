@@ -1,4 +1,5 @@
 import './Desktop.css';
+import './helpers/fonthelper.css';
 
 function showTime() {
   // Init clock variables
@@ -28,14 +29,14 @@ function showTime() {
 
 }
 
-// showTime();
+showTime();
 
 function App() {
   return (
   <div class="container" onload="currentTime()">
     <div class="desktop">
       <div class="bar">
-        <p class="clockRight">4:20</p>
+        <p class="clockRight">1:29</p>
       </div>
     </div>
   </div>
