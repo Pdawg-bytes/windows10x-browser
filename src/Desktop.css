@@ -9,7 +9,7 @@
   background-image: url(https://burst.shopifycdn.com/photos/abstract-background-of-four-colored-triangles.jpg?width=1200&format=pjpg&exif=1&iptc=1);
 }
 .bar {
-  background-color: #000000b9;
+  background-color: #0000008b;
   overflow-x:hidden;
   overflow-y: hidden;
   height: 50px;
@@ -20,6 +20,13 @@
   backdrop-filter: blur(90px) brightness(90%);
   background-blend-mode: darken;
   align-items: center;
+}
+
+.clockRight
+{
+  vertical-align: left;
+  bottom:0;
+  background-color: wheat;
 }
 
 .container
