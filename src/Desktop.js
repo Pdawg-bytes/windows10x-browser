@@ -2,7 +2,7 @@ import './Desktop.css';
 import './helpers/fonthelper.css';
 
 function currentTime() {
-  const clock = document.querySelector('.clockRight');
+  const clock = document.querySelector('.clockText');
   setInterval(function() {
     let date = new Date();
     let hours = date.getHours();
@@ -12,6 +12,10 @@ function currentTime() {
     }
     if (hours === 0) {
       hours = 12;
+    }
+    if (minutes < 10)
+    {
+      minutes = "0" + minutes;
     }
     clock.innerText = `${hours}:${minutes}`;
   }, 200);
@@ -27,9 +31,12 @@ function App() {
       <div class="bar">
         <div class="statusDiv">
           <button class="statusButton" tabindex="-1">
+            <div class="statusIcons">
+              
+            </div>   
             <div class="clock">
-              <p class="clockRight">4:51</p>
-            </div>
+              <p class="clockText">0:00</p>
+            </div>  
           </button>
         </div>
       </div>
