@@ -1,0 +1,21 @@
+.actionTooltip
+{
+    visibility: visible;
+    border-style: solid;
+    border-width: 1px;
+    width: 100px;
+    border-radius: 6px;
+    border-color:rgba(83, 83, 83, 0);
+    height: 20px;
+    font-family: SegoeReg;
+    backdrop-filter: saturate(300%) blur(100px);
+    background-color: #343333ba;
+    color: #b1b1b0;
+    text-align: center;
+    margin-top: 88vh;
+    margin-left: 91vw;
+    padding-top: 3px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+}

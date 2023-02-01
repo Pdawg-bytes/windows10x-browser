@@ -1,5 +1,7 @@
-import './Desktop.css';
+import './styles/desktop.css';
+import './styles/flyouts.css'
 import './helpers/fonthelper.css';
+import './styles/status.css';
 
 function currentTime() {
   const clock = document.querySelector('.clockText');
@@ -27,7 +29,8 @@ function App() {
   return (
   <div class="container" onload="currentTime()" tabindex="-1">
     <div class="desktop">
-      <img src="https://static.miraheze.org/windowswallpaperwiki/c/c8/Beach_%28Windows_10X%29.png" className='wallpaper' alt='wallpaper'/>
+      <div class="actionTooltip">Action Center</div>
+      <img src="https://raw.githubusercontent.com/Futur3Sn0w/Windows10x/main/DynaWalls/1Dark.jpg" className='wallpaper' alt='wallpaper'/>
       <div class="bar">
         <div class="statusDiv">
           <button class="statusButton" tabindex="-1">
