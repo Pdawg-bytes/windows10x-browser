@@ -11,21 +11,11 @@
   transition: background-color 0.1s ease-in-out;
 }
 
-.statusButton:hover .actionTooltip
-{
-    visibility: visible;
-}
-
 .statusButton:hover
 {
   background-color: #2c2b2b5a;
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
-}
-
-.clock
-{
-  
 }
 
 .clockText

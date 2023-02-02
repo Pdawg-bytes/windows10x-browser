@@ -2,6 +2,7 @@ import './styles/desktop.css';
 import './styles/flyouts.css'
 import './helpers/fonthelper.css';
 import './styles/status.css';
+import React, { useState } from 'react';
 
 function currentTime() {
   const clock = document.querySelector('.clockText');
@@ -26,14 +27,16 @@ function currentTime() {
 window.addEventListener('load', currentTime);
 
 function App() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
   <div class="container" onload="currentTime()" tabindex="-1">
     <div class="desktop">
-      <div class="actionTooltip">Action Center</div>
-      <img src="https://raw.githubusercontent.com/Futur3Sn0w/Windows10x/main/DynaWalls/1Dark.jpg" className='wallpaper' alt='wallpaper'/>
+      <div className={`actionTooltip ${isHovered ? 'visible' : 'hidden'}`}>Action Center</div>
+      <img src="https://github.com/Futur3Sn0w/Windows10x/blob/main/Walls/wall1.jpg?raw=true" className='wallpaper' alt='wallpaper'/>
       <div class="bar">
         <div class="statusDiv">
-          <button class="statusButton" tabindex="-1">
+          <button class="statusButton" tabindex="-1" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <div class="statusIcons">
               
             </div>   
