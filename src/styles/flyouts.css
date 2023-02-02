@@ -1,6 +1,5 @@
 .actionTooltip
 {
-    display: none;
     border-style: solid;
     border-width: 1px;
     width: 90px;
@@ -23,16 +22,16 @@
     margin-bottom: 60px;
     margin-right: 8px;
     right: 0;
-    transition: opacity 1s ease-in-out;
     opacity: 0;
 }
 .actionTooltip.visible 
 {
-    display: block;
-    transition: opacity 1s ease-in-out;
     opacity: 1;
+    transition: opacity 0.2s ease-in-out 0.5s;
 }
-.actionTooltip.hidden {
-    display: none;
+
+.actionTooltip.hidden 
+{
     opacity: 0;
-  }
+    transition: opacity 0.2s ease-in-out 0.5s;
+}

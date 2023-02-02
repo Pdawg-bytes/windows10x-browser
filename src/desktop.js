@@ -4,6 +4,7 @@ import './helpers/fonthelper.css';
 import './styles/status.css';
 import React, { useState } from 'react';
 
+
 function currentTime() {
   const clock = document.querySelector('.clockText');
   setInterval(function() {
@@ -23,8 +24,12 @@ function currentTime() {
     clock.innerText = `${hours}:${minutes}`;
   }, 200);
 }
-
 window.addEventListener('load', currentTime);
+
+function flyoutHoverTimer()
+{
+
+}
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -37,12 +42,13 @@ function App() {
       <div class="bar">
         <div class="statusDiv">
           <button class="statusButton" tabindex="-1" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-            <div class="statusIcons">
-              
-            </div>   
-            <div class="clock">
+            <span class="clock">
               <p class="clockText">0:00</p>
-            </div>  
+            </span> 
+            <div class="statusIcons">
+              <span class="wifiIcon">&#xE701;</span>
+              <span class="batteryIcon">&#xE83F;</span>
+            </div>    
           </button>
         </div>
       </div>

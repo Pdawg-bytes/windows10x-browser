@@ -1,47 +1,64 @@
-.statusButton
-{
+.statusButton {
   display: flex;
   position: relative;
   justify-content: flex-end;
   width: auto;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border: 0;
-  width: 100%;
+  width: 76px;
+  height: 50px;
   vertical-align: top;
   transition: background-color 0.1s ease-in-out;
 }
 
-.statusButton:hover
-{
+.statusButton:hover {
   background-color: #2c2b2b5a;
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
 }
 
-.clockText
-{
+.clockText {
   color: #b1b1b0;
   width: auto;
   font-family: SegoeSBold;
   display: flex;
-  font-size: 14px;
-  margin-top: 6px;
-  margin-right: 6px;
-  margin-bottom: 0px;
   justify-content: flex-end;
+  margin-right: -40px;
+  margin-top: 4px;
+  margin-left: 300px;
 }
 
-.statusDiv
-{
+.statusDiv {
   width: 72px;
   height: 50px;
   float: right;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-.statusIcons
-{
+.statusIcons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  width: 76px;
   margin-bottom: 0px;
-  margin-top: 30px;
+  margin-right: -10px;
+}
+
+.batteryIcon {
+  color: #b1b1b0;
+  font-family: SegoeMDL2;
+  font-size: 32px;
+  scale: calc(68%);
+  margin-right: 8px;
+  margin-bottom: -4px;
+}
+
+.wifiIcon {
+  color: #b1b1b0;
+  font-family: SegoeMDL2;
+  font-size: 14px;
+  margin-bottom: -1px;
 }

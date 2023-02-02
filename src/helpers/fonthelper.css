@@ -22,3 +22,8 @@
     font-family: FluentReg;
     src: url(/public/fonts/fluent_regular.ttf);
 }
+
+@font-face {
+    font-family: SegoeMDL2;
+    src: local('SegoeMDL2'), url('/public/fonts/segoe_mdl2.ttf') format('truetype');
+}
