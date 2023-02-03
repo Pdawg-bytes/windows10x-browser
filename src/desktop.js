@@ -1,12 +1,12 @@
 import './styles/desktop.css';
 import './styles/flyouts.css'
 import './helpers/fonthelper.css';
-import { updateBatteryLevel } from './helpers/battery';
+import { determineIcon } from './helpers/battery';
 import './styles/status.css';
 import React, { useState } from 'react';
 
 
-/*function currentTime() {
+function currentTime() {
   const clock = document.querySelector('.clockText');
   setInterval(function() {
     let date = new Date();
@@ -24,16 +24,20 @@ import React, { useState } from 'react';
     }
     clock.innerText = `${hours}:${minutes}`;
   }, 200);
-}*/
-
-//window.addEventListener('load', currentTime);
-
-function updateBatt() {
-  const clock = document.querySelector('.clockText');
-  clock.innerText = updateBatteryLevel();
 }
-  
-setInterval(updateBatt, 1000);
+
+window.addEventListener('load', currentTime);
+
+async function updateBatt()
+{
+  const battery = document.querySelector('.batteryIcon');
+  setInterval(async function()
+  {
+    battery.innerText = determineIcon();
+  }, 1000);
+}
+
+updateBatt();
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
