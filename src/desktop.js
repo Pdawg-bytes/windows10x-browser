@@ -26,14 +26,14 @@ function currentTime() {
 }
 window.addEventListener('load', currentTime);
 
-function batteryGet()
-{
-  let isBatterySupported = 'getBattery' in navigator;
-  if(!isBatterySupported) {
-     
-  }
+async function updateBatteryLevel() {
+  const battery = await navigator.getBattery();
+  const level = battery.level;
+  console.log(level);
 }
-batteryGet();
+  
+setInterval(updateBatteryLevel, 1000);
+
 function App() {
   const [isHovered, setIsHovered] = useState(false);
 
