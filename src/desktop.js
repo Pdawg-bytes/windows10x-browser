@@ -1,11 +1,12 @@
 import './styles/desktop.css';
 import './styles/flyouts.css'
 import './helpers/fonthelper.css';
+import { updateBatteryLevel } from './helpers/battery';
 import './styles/status.css';
 import React, { useState } from 'react';
 
 
-function currentTime() {
+/*function currentTime() {
   const clock = document.querySelector('.clockText');
   setInterval(function() {
     let date = new Date();
@@ -23,16 +24,16 @@ function currentTime() {
     }
     clock.innerText = `${hours}:${minutes}`;
   }, 200);
-}
-window.addEventListener('load', currentTime);
+}*/
 
-async function updateBatteryLevel() {
-  const battery = await navigator.getBattery();
-  const level = battery.level;
-  console.log(level);
+//window.addEventListener('load', currentTime);
+
+function updateBatt() {
+  const clock = document.querySelector('.clockText');
+  clock.innerText = updateBatteryLevel();
 }
   
-setInterval(updateBatteryLevel, 1000);
+setInterval(updateBatt, 1000);
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
