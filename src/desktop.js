@@ -33,7 +33,10 @@ async function updateBatt()
   const battery = document.querySelector('.batteryIcon');
   setInterval(async function()
   {
-    battery.innerText = determineIcon();
+    if (determineIcon() != null)
+    {
+      //battery.innerText = determineIcon();
+    }
   }, 1000);
 }
 
