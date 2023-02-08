@@ -1,8 +1,8 @@
 import './styles/desktop.css';
 import './styles/flyouts.css'
 import './helpers/fonthelper.css';
-import { determineIcon } from './helpers/battery';
 import './styles/status.css';
+import './styles/taskbar.css'
 import React, { useState } from 'react';
 
 
@@ -28,20 +28,6 @@ function currentTime() {
 
 window.addEventListener('load', currentTime);
 
-async function updateBatt()
-{
-  const battery = document.querySelector('.batteryIcon');
-  setInterval(async function()
-  {
-    if (determineIcon() != null)
-    {
-      //battery.innerText = determineIcon();
-    }
-  }, 1000);
-}
-
-updateBatt();
-
 function App() {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -51,6 +37,9 @@ function App() {
       <div tabindex="-1" className={`actionTooltip ${isHovered ? 'visible' : 'hidden'}`}>Action Center</div>
       <img tabindex="-1" src="https://github.com/Futur3Sn0w/Windows10x/blob/main/Walls/wall1.jpg?raw=true" className='wallpaper' alt='wallpaper'/>
       <div class="bar" tabindex="-1">
+        <div class="centerIcons" tabindex="-1">
+          <div class="startButton" tabIndex="-1"/>
+        </div>
         <div class="statusDiv" tabindex="-1">
           <button class="statusButton" tabindex="-1" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
             <span class="clock" tabindex="-1">

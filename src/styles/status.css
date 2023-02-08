@@ -47,6 +47,13 @@
   margin-right: -10px;
 }
 
+.wifiIcon {
+  color: #b1b1b0;
+  font-family: SegoeMDL2;
+  font-size: 14px;
+  margin-bottom: -1px;
+}
+
 .batteryIcon {
   color: #b1b1b0;
   font-family: SegoeMDL2;
@@ -54,11 +61,4 @@
   scale: calc(68%);
   margin-right: 8px;
   margin-bottom: -4px;
-}
-
-.wifiIcon {
-  color: #b1b1b0;
-  font-family: SegoeMDL2;
-  font-size: 14px;
-  margin-bottom: -1px;
 }
