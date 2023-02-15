@@ -1,0 +1,16 @@
+.actionCenterContainer
+{
+    border-radius: 8px;
+    background-color: #343333ba;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    position: absolute;
+    bottom:0;
+    right:0;
+    margin-right: 5px;
+    margin-bottom: 55px;
+    height: 240px;
+    width: 400px;
+    backdrop-filter: blur(90px) saturate(400%);
+    background-blend-mode: darken;
+}

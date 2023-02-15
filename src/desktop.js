@@ -3,6 +3,7 @@ import './styles/flyouts.css'
 import './helpers/fonthelper.css';
 import './styles/status.css';
 import './styles/taskbar.css'
+import './styles/action.css';
 import React, { useState } from 'react';
 
 
@@ -36,6 +37,9 @@ function App() {
     <div class="desktop">
       <div tabindex="-1" className={`actionTooltip ${isHovered ? 'visible' : 'hidden'}`}>Action Center</div>
       <img tabindex="-1" src="https://github.com/Futur3Sn0w/Windows10x/blob/main/Walls/wall1.jpg?raw=true" className='wallpaper' alt='wallpaper'/>
+      <div class="actionCenterContainer" tabIndex="-1">
+
+      </div>
       <div class="bar" tabindex="-1">
         <div class="centerIcons" tabindex="-1">
           <div class="startButton" tabIndex="-1"/>
